@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="images/favicon.png" alt = "Browse Icon" width = "200">
+	<link rel="stylesheet" href="css/html5reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Mono&display=swap" >
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anek+Devanagari&family=Fredoka+One&display=swap">
+	<title>CONTACT</title>
+</head>
+<body>
+    <!-- Action removed for security purposes -->
+	<header>
+        <h1 id="logo">HONEYJAM</h1>
+		<nav>
+			<ul class = "nav_links">
+				<li class="nav_item"><a href = "index.html" >HOME</a></li>
+				<li class="nav_item"><a href = "k-pop.html">K-POP</a></li>
+				<li class="nav_item"><a href = "k-dramas.html">K-DRAMAS</a></li>
+				<li class="nav_item"><a href = "movies.html">K-MOVIES</a></li>
+                <li class = "active"><a href = "form.html">CONTACT</a></li>
+			</ul>
+		</nav>
+	</header>
+    
+    <main class="form" id="skip">
+        <form>
+        <fieldset>
+            <legend>Submit Form</legend>
+
+            <label for="name_id">Your Name</label>
+            <input type="text" placeholder="Enter Your Name" id = "name_id" name="name" required>
+
+            <label for="email_id">Your Email</label>
+            <input type="email" placeholder="Enter Your Email" id = "email_id" name="email" required>
+
+            <label for="phone_id">Your Phone Number</label>
+            <input type="tel" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+            <div><span>Format: 123-456-7890</span></div>
+
+
+            <label for="msg">Leave A Message</label>
+            <textarea placeholder="Enter your message" id = "msg" name="mesg" required></textarea><br>
+
+            <input type="checkbox" checked="checked" name="remember" id = "cBox"> 
+            <label for ="cBox">Remember me</label>
+
+            <input type="submit" value = "Contact Me">
+        </fieldset>
+        </form>
+    </main>
+</body>
+
+</html>

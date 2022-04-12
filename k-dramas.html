@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.png" alt = "Browse Icon" width = "200">
+	<link rel="stylesheet" href="css/html5reset.css">
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Mono&display=swap" >
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anek+Devanagari&family=Fredoka+One&display=swap">
+    <link href="dist/css/lightbox.css" rel="stylesheet">
+	<title>K-DRAMAS</title>
+</head>
+<body>
+    <a class = "skip" href="#skip">Skip to Main Content</a>
+	<header>
+        <h1 id="logo">HONEYJAM</h1>
+		<nav>
+			<ul class = "nav_links">
+				<li class="nav_item"><a href = "index.html" >HOME</a></li>
+                <li class="nav_item"><a href = "k-pop.html">K-POP</a></li>
+                <li class="active"><a href = "k-dramas.html">K-DRAMAS</a></li>
+                <li class="nav_item"><a href = "movies.html">K-MOVIES</a></li>
+                <li class="nav_item"><a href = "form.html">CONTACT</a></li>
+			</ul>
+		</nav>
+
+	</header>
+
+	<main class="dramas" id="skip">
+        <div class="container" id= "dramas">
+            <h2>Best Korean TV Dramas</h2>
+            <!-- <p>Squidgame</p> -->
+            <a class="example-image-link" href="images/squidgame.jpg" data-lightbox="image" data-title="squidgame">
+                <img class="class-example" src = "images/squidgame.jpg" alt = "squid game"/>
+            </a>
+            <!-- <p>Guardian: the lonely and great god</p> -->
+            <a class="example-image-link" href="images/guardian.jpg" data-lightbox="image" data-title="guardian">
+                <img class="class-example" src = "images/guardian.jpg" alt = "guardian the lonely and great god"/>
+            </a>
+            <!-- <p>Descendants of the sun</p> -->
+            <a class="example-image-link" href="images/taeyang.jpg" data-lightbox="image" data-title="taeyang">
+                <img class="class-example" src = "images/taeyang.jpg" alt = "descendants of the sun"/>
+            </a> 
+            <!-- <p>The reply series</p> -->
+            <a class="example-image-link" href="images/replyseries.jpg" data-lightbox="image" data-title="reply">
+                <img class="class-example" src = "images/replyseries.jpg" alt = "the reply series"/>
+            </a>   
+            <!-- <p>Sky castle</p> -->
+            <a class="example-image-link" href="images/sky.jpg" data-lightbox="image" data-title="sky">
+                <img class="class-example" src = "images/sky.jpg" alt = "sky castle"/>
+            </a> 
+            <!-- <p>My Love from the Star</p> -->
+            <a class="example-image-link" href="images/star.jpg" data-lightbox="image" data-title="star">
+                <img class="class-example" src = "images/star.jpg" alt = "my Love from the Star" />
+            </a>
+            <!-- <p>The heirs</p> -->
+            <a class="example-image-link" href="images/theheirs.jpg" data-lightbox="image" data-title="theheirs">
+                <img class="class-example" src = "images/theheirs.jpg" alt = "the heirs" />
+            </a>
+            <!-- <p>Crash landing on you</p> -->
+            <a class="example-image-link" href="images/crash.jpg" data-lightbox="image" data-title="crash">
+                <img class="class-example" src = "images/crash.jpg" alt = "crash landing on you" />
+            </a>
+            <!-- <p>Penthouse</p> -->
+            <a class="example-image-link" href="images/penthouse.jpg" data-lightbox="image" data-title="penthouse">
+                <img class="class-example" src = "images/penthouse.jpg" alt = "penthouse" />
+            </a> 
+        </div>
+
+    </main>
+    <footer>
+		<p>Joan Suh &copy; 2022</p>
+	</footer>
+    <script src="dist/js/lightbox.js"></script>
+    <script src="dist/js/mixitup.min.js"></script>
+    <script>
+        var containerEl = document.querySelector('.container');
+        var mixer = mixitup(containerEl);
+    </script>
+</body>
+</html>
