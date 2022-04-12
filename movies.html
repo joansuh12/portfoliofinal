@@ -9,7 +9,10 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Mono&display=swap" >
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anek+Devanagari&family=Fredoka+One&display=swap">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
 	<title>K-Movies</title>
+	<link href="dist/css/lightbox.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -24,35 +27,133 @@
 				<li class = "active"><a href = "movies.html">K-MOVIES</a></li>
 				<li class="nav_item"><a href = "form.html">CONTACT</a></li>
 			</ul>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()" aria-label="menu">
+        		<i class="fa fa-bars"></i>
+      		</a>
 		</nav>
 	</header>
-
+	<script>
+	function myFunction() {
+		var x = document.getElementById("topnav");
+		if (x.className === "nav") {
+			x.className += " responsive";
+		} else {
+			x.className = "nav";
+		}
+	}
+	</script>
 
 	<main class="movies" id="skip">
-		<div class="best" id="bestk-m">
-			<h2>Best Korean movies</h2>
-			<p> Parasite...Minari...You might have already heard about these fabulous movies that were able to win prestigious awards and receive worldwide recognition for the first time in Korea. But there are also countless Korean movies that Koreans always keep in their minds as masterpieces. Check out this list of the best Korean movies of all time in addition to award-winning movies. </p>
+		<div class="moviesintro" id="bestk-m">
+			<h2>
+			Parasite...Minari...You might have already heard about these fabulous movies that were able to win prestigious awards 
+			and receive worldwide recognition for the first time in Korea.
+			<br>
+			But there are also countless Korean films that we always keep in our minds as masterpieces.
+			</h2>
+			<h3>
+			Check out this list of some of the BEST KOREAN MOVIES of all time! 
+			</h3>	
+			<h4>
+				BEST Korean Movies
+			</h4>
 		</div>
 
-		<div class="award" id="awardwinning">
-			<h3>Award-winning Movies</h3>
-				<p>Parasite</p>
-				<img src = "images/parasite.jpg" alt = "parasite" width = "200"/>
-				
-				<p>“Just being nominated along with fellow, amazing international filmmakers was a huge honor. 
-				I think we use only one language: the cinema.” <br> - Bong Joon Ho </p>
-				<!-- <iframe width="420" height="315"
-						src="https://youtu.be/mX3obZ0lXoU"> </iframe> -->
+		<button type="button" data-filter="all">All</button>
+	    <button type="button" data-filter=".comedy">Comedy</button>
+	    <button type="button" data-filter=".action">Action</button>
+        <button type="button" data-filter=".fantasy">Fantasy</button>
+        <button type="button" data-filter=".drama">Drama</button>
 
-				<p>Minari</p>
-				<img src = "images/minari.jpg" alt = "minari" width = "200"/>
-				<p>“I’m sure it’s about time. Just hearing different stories, I think it’s very nice to understand each other. And we should embrace each other. People are categorised like black, white, yellow, brown … that is not a nice way to just divide like that, you know? I think we should put our colours together, make it prettier, even rainbows have seven colours. Colours don’t matter,” <br> - Youn Yuh Jung </p>
+		<div class="container" id= "movies">
+            <a class="mix action" href="images/veteran.jpg" data-lightbox="image" data-title="Veteran">
+                <img class="class-example" src = "images/veteran.jpg" alt = "veteran"/>
+            </a>
+            
+            <a class="mix drama mix action" href="images/taxidriver.jpg" data-lightbox="image" data-title="A Taxi Driver">
+                <img class="class-example" src = "images/taxidriver.jpg" alt = "a Taxi Driver"/>
+            </a>
+            
+            <a class="mix comedy mix action" href="images/extreme.jpg" data-lightbox="image" data-title="Extreme Job">
+                <img class="class-example" src = "images/extreme.jpg" alt = "extreme job"/>
+            </a> 
+            
+            <a class="mix action mix fantasy" href="images/alongwithgods.jpeg" data-lightbox="image" data-title="Along With the Gods: The Two Worlds">
+                <img class="class-example" src = "images/alongwithgods.jpeg" alt = "along With the Gods: The Two Worlds"/>
+            </a>  
+
+            <a class="mix drama" href="images/odetomyfather.jpg" data-lightbox="image" data-title="Ode to My Father">
+                <img class="class-example" src = "images/odetomyfather.jpg" alt = "ode to My Father"/>
+            </a> 
+
+            <a class="mix action" href="images/haeundae.jpeg" data-lightbox="image" data-title="Haeundae">
+                <img class="class-example" src = "images/haeundae.jpeg" alt = "haeundae"/>
+            </a> 
+        
+            <a class="mix action" href="images/thehost.jpg" data-lightbox="image" data-title="The Host">
+                <img class="class-example" src = "images/thehost.jpg" alt = "the host"/>
+            </a> 
+           
+            <a class="mix action mix drama" href="images/theives.jpg" data-lightbox="image" data-title="The Thieves">
+                <img class="class-example" src = "images/theives.jpg" alt = "the Thieves" />
+            </a>
+           
+            <a class="mix drama mix comedy" href="images/no.7.jpg" data-lightbox="image" data-title="Miracle in Cell No.7">
+                <img class="class-example" src = "images/no.7.jpg" alt = "miracle in Cell No.7" />
+            </a>
+       
+            <a class="mix action mix drama" href="images/assass.jpg" data-lightbox="image" data-title="Assassination">
+                <img class="class-example" src = "images/assass.jpg" alt = "ㅁssassination" />
+            </a>
+          
+            <a class="mix action" href="images/traintobusan.jpg" data-lightbox="image" data-title="Train to Busan">
+                <img class="class-example" src = "images/traintobusan.jpg" alt = "train to Busan" />
+            </a> 
+
+            <a class="mix drama" href="images/taegukgi.jpg" data-lightbox="image" data-title="Taegukgi">
+                <img class="class-example" src = "images/taegukgi.jpg" alt = "taegukgi" />
+            </a> 
+
+        </div>
+
+		<div class="awardcontainer" id="awardwinning">
+			<h5>
+				Memorable Moments
+			</h5>
+			<div class="remarkcontainer">
+				<div class="awardremarks">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/ifGIAQz9rtk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/ekMl5VHBH4I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/Wg_Ql89fWy4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/mX3obZ0lXoU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+				<!-- <p>“I’m sure it’s about time. Just hearing different stories, I think it’s very nice to understand each other. And we should embrace each other. People are categorised like black, white, yellow, brown … that is not a nice way to just divide like that, you know? I think we should put our colours together, make it prettier, even rainbows have seven colours. Colours don’t matter,” <br> - Youn Yuh Jung </p> -->
+				</div>
+			</div>
 		</div>
 
 	</main>
-	<footer>
-		<p>Joan Suh &copy; 2022</p>
+	<footer class="footer-basic">
+		<div class="social"><a href="https://www.instagram.com/joan_suh/" target="_blank"><i class="icon ion-social-instagram"></i></a><a href="https://www.snapchat.com/add/joan9179?share_id=NzNGQUND&locale=en_US" target="_blank"><i class="icon ion-social-snapchat"></i></a><a href="https://www.facebook.com/profile.php?id=100007914850986" target="_blank"><i class="icon ion-social-facebook"></i></a></div>
+            <ul class="list-inline">
+                <li class="nav_item"><a href = "index.html" >ABOUT</a></li>
+				<li class="nav_item"><a href = "k-pop.html">K-POP</a></li>
+				<li class="nav_item"><a href = "k-dramas.html">K-DRAMAS</a></li>
+				<li class="nav_item"><a href = "movies.html">K-MOVIES</a></li>
+				<li class="nav_item"><a href = "form.html">CONTACT</a></li>
+            </ul>
+            <p class="copyright">Joan Suh © 2022</p>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
 	</footer>
-
+	<script src="dist/js/lightbox.js"></script>
+    <script src="dist/js/mixitup.min.js"></script>
+    <script>
+        var containerEl = document.querySelector('.container');
+        var mixer = mixitup(containerEl);
+    </script>
 </body>
 </html>
