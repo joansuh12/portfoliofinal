@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Mono&display=swap" >
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anek+Devanagari&family=Fredoka+One&display=swap">
     <link href="dist/css/lightbox.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<title>K-DRAMAS</title>
 </head>
 <body>
@@ -24,11 +25,31 @@
                 <li class="nav_item"><a href = "movies.html">K-MOVIES</a></li>
                 <li class="nav_item"><a href = "form.html">CONTACT</a></li>
 			</ul>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()" aria-label="menu">
+        		<i class="fa fa-bars"></i>
+      		</a>
 		</nav>
 
 	</header>
-
+	<script>
+	function myFunction() {
+    		var x = document.getElementById("topnav");
+    		if (x.className === "nav") {
+        		x.className += " responsive";
+    		} else {
+        		x.className = "nav";
+    		}
+	}
+	</script>
+	
 	<main class="dramas" id="skip">
+	<button type="button" data-filter="all">All</button>
+	<button type="button" data-filter=".japan">Osaka, Japan</button>
+	<button type="button" data-filter=".michigan">Ann Arbor, MI, US</button>
+        <button type="button" data-filter=".korea">Seoul, Korea</button>
+        <button type="button" data-filter=".chicago">Chicago, IL, US</button>
+        <button type="button" data-filter=".newyork">NY, US</button>
+
         <div class="container" id= "dramas">
             <h2>Best Korean TV Dramas</h2>
             <!-- <p>Squidgame</p> -->
