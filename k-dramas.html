@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="images/favicon.png" alt = "Browse Icon" width = "200">
+    <link rel="icon" href="images/favicon.png">
 	<link rel="stylesheet" href="css/html5reset.css">
 	<link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Mono&display=swap" >
@@ -25,7 +25,7 @@
                 <li class="nav_item"><a href = "movies.html">K-MOVIES</a></li>
                 <li class="nav_item"><a href = "form.html">CONTACT</a></li>
 			</ul>
-		<a href="javascript:void(0);" class="icon" onclick="myFunction()" aria-label="menu">
+		    <a href="javascript:void(0);" class="icon" onclick="myFunction()" aria-label="menu">
         		<i class="fa fa-bars"></i>
       		</a>
 		</nav>
@@ -33,59 +33,58 @@
 	</header>
 	<script>
 	function myFunction() {
-    		var x = document.getElementById("topnav");
-    		if (x.className === "nav") {
-        		x.className += " responsive";
-    		} else {
-        		x.className = "nav";
-    		}
+    	var x = document.getElementById("topnav");
+    	if (x.className === "nav") {
+        	x.className += " responsive";
+    	} else {
+        	x.className = "nav";
+    	}
 	}
 	</script>
 	
 	<main class="dramas" id="skip">
-	<button type="button" data-filter="all">All</button>
-	<button type="button" data-filter=".japan">Osaka, Japan</button>
-	<button type="button" data-filter=".michigan">Ann Arbor, MI, US</button>
-        <button type="button" data-filter=".korea">Seoul, Korea</button>
-        <button type="button" data-filter=".chicago">Chicago, IL, US</button>
-        <button type="button" data-filter=".newyork">NY, US</button>
+	    <button type="button" data-filter="all">All</button>
+	    <button type="button" data-filter=".romance">Romantic</button>
+	    <button type="button" data-filter=".thriller">Thriller</button>
+        <button type="button" data-filter=".crime">Crime</button>
+        <button type="button" data-filter=".drama">Drama</button>
 
         <div class="container" id= "dramas">
-            <h2>Best Korean TV Dramas</h2>
+            <!-- <h2>Best Korean TV Dramas</h2> -->
             <!-- <p>Squidgame</p> -->
-            <a class="example-image-link" href="images/squidgame.jpg" data-lightbox="image" data-title="squidgame">
+            <a class="mix thriller" href="images/squidgame.jpg" data-lightbox="image" data-title="squidgame">
                 <img class="class-example" src = "images/squidgame.jpg" alt = "squid game"/>
             </a>
             <!-- <p>Guardian: the lonely and great god</p> -->
-            <a class="example-image-link" href="images/guardian.jpg" data-lightbox="image" data-title="guardian">
+            <a class="mix romance" href="images/guardian.jpg" data-lightbox="image" data-title="guardian">
                 <img class="class-example" src = "images/guardian.jpg" alt = "guardian the lonely and great god"/>
             </a>
             <!-- <p>Descendants of the sun</p> -->
-            <a class="example-image-link" href="images/taeyang.jpg" data-lightbox="image" data-title="taeyang">
+            <a class="mix romance" href="images/taeyang.jpg" data-lightbox="image" data-title="taeyang">
                 <img class="class-example" src = "images/taeyang.jpg" alt = "descendants of the sun"/>
             </a> 
             <!-- <p>The reply series</p> -->
-            <a class="example-image-link" href="images/replyseries.jpg" data-lightbox="image" data-title="reply">
+            <a class="mix drama" href="images/replyseries.jpg" data-lightbox="image" data-title="reply">
                 <img class="class-example" src = "images/replyseries.jpg" alt = "the reply series"/>
             </a>   
             <!-- <p>Sky castle</p> -->
-            <a class="example-image-link" href="images/sky.jpg" data-lightbox="image" data-title="sky">
+            <a class="mix drama" href="images/sky.jpg" data-lightbox="image" data-title="sky">
                 <img class="class-example" src = "images/sky.jpg" alt = "sky castle"/>
             </a> 
             <!-- <p>My Love from the Star</p> -->
-            <a class="example-image-link" href="images/star.jpg" data-lightbox="image" data-title="star">
+            <a class="mix romance" href="images/star.jpg" data-lightbox="image" data-title="star">
                 <img class="class-example" src = "images/star.jpg" alt = "my Love from the Star" />
             </a>
             <!-- <p>The heirs</p> -->
-            <a class="example-image-link" href="images/theheirs.jpg" data-lightbox="image" data-title="theheirs">
+            <a class="mix romance" href="images/theheirs.jpg" data-lightbox="image" data-title="theheirs">
                 <img class="class-example" src = "images/theheirs.jpg" alt = "the heirs" />
             </a>
             <!-- <p>Crash landing on you</p> -->
-            <a class="example-image-link" href="images/crash.jpg" data-lightbox="image" data-title="crash">
+            <a class="mix romance" href="images/crash.jpg" data-lightbox="image" data-title="crash">
                 <img class="class-example" src = "images/crash.jpg" alt = "crash landing on you" />
             </a>
             <!-- <p>Penthouse</p> -->
-            <a class="example-image-link" href="images/penthouse.jpg" data-lightbox="image" data-title="penthouse">
+            <a class="mix drama" href="images/penthouse.jpg" data-lightbox="image" data-title="penthouse">
                 <img class="class-example" src = "images/penthouse.jpg" alt = "penthouse" />
             </a> 
         </div>
