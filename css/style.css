@@ -94,9 +94,18 @@ a {
 }
 
 
-img:hover:nth-child(2n){
+/* img:hover:nth-child(2n){
 	filter: grayscale(1) blur(1px);
 	border: solid; 
+} */
+
+.websiteintro img{
+	transition: 1s ease;
+}
+
+.websiteintro img:hover{
+	transform: scale(1.2);
+	transition: 1s ease;
 }
 
 .introduction, .k-pop_introduction, .honeyjambox, .dramaintro, .moviesintro{
@@ -411,10 +420,12 @@ header{
 	margin: 10px 0;
 }
 
+/* footer bootstrap */
 .footer-basic {
 	padding:40px 0;
 	background-color:#ffffff;
 	color:#4b4c4d;
+	font-family: 'Anek Devanagari', sans-serif;
 }
   
 .footer-basic ul {
