@@ -48,7 +48,8 @@ header{
 }
 
 nav{
-	width: 70%
+	width: 50%;
+	padding-top: 10px;
 }
 
 input {
@@ -79,6 +80,9 @@ input {
 
 a:hover {
 	color: #FF1493;
+	text-decoration: underline;
+	text-decoration-thickness: 4px;
+	text-decoration-color: #f3138b;
   }
 
 
@@ -562,6 +566,7 @@ a.skip:focus{
         flex-direction: row;
         justify-content: space-evenly;
     }
+
 
 }
 
