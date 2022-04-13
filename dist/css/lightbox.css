@@ -239,8 +239,10 @@ grid-template-columns: repeat(auto-fill, minmax(300px, auto));
 }
 
 }
+
 @media only screen and (max-width:450px) {
   img{
     height: 50vh;
   }
 }
+
