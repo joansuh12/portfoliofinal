@@ -546,6 +546,8 @@ header{
     animation-duration: 3s;
 } */
 
+
+
 a.skip{
     background: white;
     left: 0;
@@ -555,6 +557,7 @@ a.skip{
     -webkit-transition: top 1s ease-out;
     transition: top 1s ease-out;
     z-index: 1;
+	font-family: 'Anek Devanagari', sans-serif;
 }
 
 a.skip:focus{
@@ -562,6 +565,7 @@ a.skip:focus{
     color: black;
     text-decoration-style: solid;
 }
+
 
 @media (prefers-reduced-motion: reduce) {
 
