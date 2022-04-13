@@ -227,6 +227,7 @@ button{
   -webkit-border-radius: 8px;
 }
 
+
 @media only screen and (max-width: 800px){
 img{
     height:30vh;

@@ -499,6 +499,10 @@ header{
 	border-width: 0;
 }
 
+.dark-mode {
+	background-color: black;
+	color: white;
+}
 
 @keyframes glowing {
     0% {
