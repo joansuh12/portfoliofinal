@@ -123,7 +123,7 @@ a {
 /* index.html */
 .container2{
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: repeat(3, 1fr);
 	/* grid-auto-rows: minmax(20vh, auto); */
 	grid-gap: 5px;
 	max-width: 1125px;
@@ -222,7 +222,6 @@ p {
 	margin-bottom: 3em;
 }
 
-
 .top4container h4{
 	/* font-size: 20px; */
 	font-family: 'Press Start 2P', cursive;
@@ -233,15 +232,21 @@ p {
 	margin-bottom: 2em;
 }
 
-.kpopcontainer{
+.top4{
 	display: flex;
 	flex-flow: row wrap;
 	padding: 10px;
-	justify-content: center;
-  	align-items: center;
-  	align-content: center;
-	text-align: center;
+	justify-content: space-evenly;
+  	/* align-items: center;
+  	align-content: center; */
+	/* text-align: center;
+	text-align: center; */
 }
+
+.top4 object{
+	padding-bottom: 10px;
+}
+
 
 .mustplaylists h5{
 	font-family: 'Press Start 2P', cursive;
@@ -251,35 +256,35 @@ p {
 	margin-top: 3em;
 }
 
-.mustplaylists{
+/* .mustplaylists{
 	display:block;
 	margin-top: 2em;
 	margin-bottom: 1em;
-	/* overflow: scroll; */
-}
+} */
 
 .playlistcards img{
-	width: 200px;
+	width: 100%;
 	height: 200px;
-	/* border: 4px solid rgb(112, 47, 233); */
 }
 
 .playlistcards{
 	display: grid;
-	grid-template-columns: auto auto;
-	grid-gap: 40px;
-	max-width: 1125px;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 15px; 
+	/* max-width: 1125px; */
 	margin: 5vw auto;
 	justify-content: center;
 	row-gap: 40px;
-}
+	padding: 10px 10px;
+	justify-items: center;
+}  
+
 
 .playlist1-flipcard, .playlist2-flipcard, .playlist3-flipcard, .playlist4-flipcard{
 	background-color: transparent;
- 	width: 200px;
+ 	width: 100%;
   	height: 200px;
 	box-shadow: 10px 10px #f3138b;
-	perspective: 1000px;
 }
 
 .card-inner{
@@ -575,7 +580,8 @@ a.skip:focus{
 
 }
 
-@media screen and (min-width: 850px) {
+
+@media screen and (min-width: 768px) {
     
     body > header:nth-child(2) {
         position: sticky;
@@ -593,7 +599,55 @@ a.skip:focus{
         justify-content: space-evenly;
     }
 
+	.top4 object{
+		width: 560px;
+		height: 315px;
+	}
 
+	.top1player iframe{
+		width:500px;
+		height:154px;
+	}
+
+	.playlist1-flipcard, .playlist2-flipcard, .playlist3-flipcard, .playlist4-flipcard{
+		width: 50%;
+		height: 200px;
+	}
+}
+
+
+@media screen and (min-width: 1025px) {
+    
+    body > header:nth-child(2) {
+        position: sticky;
+        top: 0;
+        left: 0;
+    }
+    
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .nav_links {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+	.top4 object{
+		width: 560px;
+		height: 315px;
+	}
+
+	.top1player iframe{
+		width:500px;
+		height:154px;
+	}
+
+	.playlist1-flipcard, .playlist2-flipcard, .playlist3-flipcard, .playlist4-flipcard{
+		width: 200px;
+		height: 200px;
+	}
 }
 
 
