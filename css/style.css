@@ -107,14 +107,14 @@ a {
 	border: solid; 
 } */
 
-.websiteintro img{
+/* .websiteintro img{
 	transition: 1s ease;
 }
 
 .websiteintro img:hover{
 	transform: scale(1.2);
 	transition: 1s ease;
-}
+} */
 
 .introduction, .k-pop_introduction, .honeyjambox, .dramaintro, .moviesintro{
 	line-height:1em;
@@ -549,7 +549,7 @@ header{
     }
         
     to {
-        width: 300px;
+        width: 600px;
         opacity: 1;
     }
 }
@@ -558,11 +558,10 @@ header{
     animation: glowing 1300ms;
 }
 
-/* #dalgona {
-	animation-name: img_wiggle;
-    animation-duration: 3s;
-} */
-
+.websiteintro img{
+	animation: img_wiggle;
+	animation-duration: 1s;
+}
 
 
 a.skip{
@@ -589,6 +588,10 @@ a.skip:focus{
 #logo {
 	animation: none;
       }
+
+.websiteintro img{
+	animation: none;
+	}
 
 }
 
