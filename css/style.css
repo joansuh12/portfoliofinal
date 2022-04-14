@@ -416,6 +416,18 @@ p {
 	text-align: center;
 }
 
+/* .top4{
+	display: flex;
+	flex-flow: row wrap;
+	padding: 10px;
+	justify-content: space-evenly;
+}
+
+.top4 object{
+	padding-bottom: 10px;
+} */
+
+
 /*Improve the spacing for paragraphs AND headings*/
 p, h1, h2 {
     padding: 10px;
@@ -589,8 +601,12 @@ a.skip:focus{
         left: 0;
     }
     
-
 	.top4 object{
+		width: 560px;
+		height: 315px;
+	}
+
+	.remarkcontainer object{
 		width: 560px;
 		height: 315px;
 	}
@@ -626,6 +642,11 @@ a.skip:focus{
     }
 
 	.top4 object{
+		width: 560px;
+		height: 315px;
+	}
+
+	.remarkcontainer object{
 		width: 560px;
 		height: 315px;
 	}
