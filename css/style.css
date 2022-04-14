@@ -589,15 +589,6 @@ a.skip:focus{
         left: 0;
     }
     
-    header {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .nav_links {
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
 
 	.top4 object{
 		width: 560px;
